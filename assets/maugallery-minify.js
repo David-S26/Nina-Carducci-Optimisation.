@@ -25,6 +25,7 @@ let index=0,next=null;$(imagesCollection).each(function(i){if($(activeImage).att
                                 : '<span style="display:none;" />'
                             }
                         </div>
+                        
                     </div>
                 </div>
             </div>`)},showItemTags(gallery,position,tags){var tagItems='<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';$.each(tags,function(index,value){tagItems+=`<li class="nav-item active">
