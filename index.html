@@ -16,8 +16,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js" integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok=" crossorigin="anonymous"></script>
-
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@nina_carducci">
@@ -92,9 +91,9 @@
 </head>
 
 <body>
-	<header>
+	<header >
 		<div class="top-header">
-			<h1 class="name">Nina Carducci</h1>
+			<h3 class="name">Nina Carducci</h3>
 			<div class="nav">
 				<ul>
 					<li><a href="#about">À propos</a></li>
@@ -110,7 +109,7 @@
 		</div>		
 	</header>
 
-	<main>
+	<main id="header">
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -145,6 +144,7 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
+		</div>
 
 		<!--A PROPOS-->
 		<section id="about">
@@ -167,36 +167,36 @@
 
 		<!--GALERIE-->
 		<section id="gallery">
-			<h2 class="title">Portfolio</h2>
+			<h3 class="title">Portfolio</h3>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concerts" class="gallery-item"
 						src="./assets/images/webp/aaron-paul-wnX-fXzB6Cw-unsplash_resultat.webp"
-						alt="concert-aaron-paul" >
+						alt="concert-aaron-paul" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/webp/ali-morshedlou-WMD64tMfc4k-unsplash_resultat.webp"
-						alt="entreprise-ali-morshedlou" >
+						alt="entreprise-ali-morshedlou" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/webp/jason-goodman-tHO1_OuKbg0-unsplash_resultat.webp"
-						alt="entreprise-jason-goodman" >
+						alt="entreprise-jason-goodman" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/webp/hannah-busing-RvF2R_qMpRk-unsplash_resultat.webp"
-						alt="mariage-hannah-busing" >
+						alt="mariage-hannah-busing" />
 					<img data-gallery-tag="Portraits" class="gallery-item"
 						src="./assets/images/webp/ade-tunji-rVkhWWZFAtQ-unsplash_resultat.webp"
-						alt="portrait-ade-tunji" >
+						alt="portrait-ade-tunji" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/webp/jakob-owens-SiniLJkXhMc-unsplash_resultat.webp"
-						alt="mariage-jakob-owens" >
+						alt="mariage-jakob-owens" />
 					<img data-gallery-tag="Portraits" class="gallery-item"
 						src="./assets/images/webp/nino-van-prattenburg-443cl1uR_8-unsplash_resultat.webp"
-						alt="portrait-nino-van-prattenburg" >
+						alt="portrait-nino-van-prattenburg" />
 					<img data-gallery-tag="Concerts" class="gallery-item"
 						src="./assets/images/webp/austin-neill-hgO1wFPXl3I-unsplash_resultat.webp"
-						alt="concert-austin-neill" >
+						alt="concert-austin-neill" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/webp/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_resultat.webp"
-						alt="entreprise-mateus-campos-felipe" >
+						alt="entreprise-mateus-campos-felipe" />
 				</div>
 			</div>
 			<!--Notes-->
@@ -215,7 +215,7 @@
 
 		<!--SERVICES-->
 		<section id="services">
-			<h2 class="title">Mes services</h2>
+			<h1 class="title">Mes services</h1>
 			<div class="container">
 				<div class="service">
 					<div class="service__description">
@@ -269,14 +269,14 @@
 				<div class="form-container">
 					<h1>Une question ? Une demande de devis ?</h1>
 					<p>N'hésitez pas à m'écrire ! Je vous répondrais en moins de 24 heures.</p>
-					<form action="/formulaire.php" method="post">
+					<form action="" method="post">
 						<label for="nom">Nom</label>
 						<input type="text" name="nom" id="nom">
 						<label for="email">Email</label>
 						<input type="email" name="email" id="email">
 						<label for="message">Message</label>
 						<textarea name="message" id="message" cols="30" rows="10"></textarea>
-						<input type="submit" value="Envoyer">
+						<input type="submit" value="Envoyer" />
 					</form>
 				</div>
 				<div class="picture right">   
@@ -293,7 +293,7 @@
 				<li itemprop="location">Adresse:</li>
 				<li itemprop="name">Nina Carducci Photographe</li>
 				<li itemprop="address">68 avenue Alsace-Lorraine</li>
-				<li itemprop="postalCode">33200 <span itemprop="addressLocality">Bordeaux</span></li>
+				<li><span itemprop="postalCode">33200</span> <span itemprop="addressLocality">Bordeaux</span></li>
 			</ul>
 		</div>
 		<div>
